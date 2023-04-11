@@ -1,10 +1,11 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
-contract Faucet is Ownable, ReentrancyGuard {
+contract FaucetV2 is Ownable, ReentrancyGuard {
     address contractOwner;
     uint256 public agixMaxSupply;
     uint256 public rejuveMaxSupply;

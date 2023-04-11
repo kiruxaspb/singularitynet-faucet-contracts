@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -9,7 +10,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
   * For deposit token - send tokens to contract address
   *
   */
-contract Faucet is Ownable {
+contract FaucetV1 is Ownable {
     address payable contractOwner;
     IERC20 public agixToken;
     IERC20 public rejuveToken;
